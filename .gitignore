@@ -1,3 +1,4 @@
 nodemodules/
 backend/nodemodules/
 frontend/nodemodules/
+*.env
