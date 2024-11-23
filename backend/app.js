@@ -7,7 +7,7 @@ app.use(cors())
 const port = 3000
 
 const pool = mysql.createPool({
-    host: "localhost", user: "root", password: "0l1b3rM@l@banan@!!@",
+    host: "localhost", user: "root", password: "NewPassword",
     database: 'dbrace', waitForConnections: true, connectionLimit: 10,
     maxIdle: 10, // max idle connections, the default value is the same as `connectionLimit`
     idleTimeout: 60000, // idle connections timeout, in milliseconds, the default value 60000
@@ -52,15 +52,9 @@ app.post('/add-driver', async (req, res) => {
     }
 
 
-    if (validateQuery(req, ['driver_code', 'first_name', 'last_name', 'birth_date', 'nationality', 'constructor_id', 'contract_id'])) {
-        const query = `
-        INSERT INTO driver(driver_code, first_name, last_name, birth_date, nationality, constructor_id, contract_id)
-            VALUES(${req.query.driver_code}, ${req.query.first_name},
-                ${req.query.last_name}, ${req.query.birth_date},
-                ${req.query.nationality}, ${req.query.constructor_id},
-                ${req.query.contract_id}); `.replaceAll('\n', ' ');
-
-        res.status(200).send({ text: req.query.first_name + ' ' + req.query.last_name + ' has been registered' })
+    if (validateQuery(req, ['driver_code', 'first_name', 'last_name', 'birth_date', 'country_id'])) {
+        const data = await performQuery(req.query.driver_code, req.query.first_name, req.query.last_name, req.query.birth_date, req.query.country_id);
+        res.status((data.error) ? 404 : 200).send((data.error) ? "" : { text: req.query.first_name + ' ' + req.query.last_name + ' has been registered' })
     } else {
         res.status(404).send({ text: "Missing parameters" })
     }
