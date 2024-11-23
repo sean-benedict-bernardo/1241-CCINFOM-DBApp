@@ -1,3 +1,5 @@
+/* DriverParticipateStyle.css */
+
 html, body {
     background-image: url('../../../../Resources/DriversBG.png');
     background-size: cover;
@@ -6,4 +8,96 @@ html, body {
     overflow: hidden;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2vw;
+    border-radius: 1vw;
+    max-width: 25vw;
+    width: 100%;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    width: 100%;
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+
+form select, form input {
+    width: 100%;
+    padding: 1vh;
+    margin-bottom: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 0.5vw;
+}
+
+form button {
+    width: 100%;
+    padding: 1.5vh;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.back-button-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 1.5vh 3vw;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    .title {
+        font-size: 6vw;
+    }
+
+    form {
+        padding: 4vw;
+        max-width: 90vw;
+    }
+
+    form button, .back-button {
+        font-size: 3vw;
+    }
 }

@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Driver: Specific Report</title>
-    <link rel="stylesheet" href="DriverSpecificReportStyle.css">
+    <title>Drivers: Summative Report</title>
+    <link rel="stylesheet" href="DriversChampionshipReportStyle.css">
 </head>
 <body>
-    <div class="title">Driver Specific Report</div>
+    <div class="title">Drivers Summative Report</div>
     <div class="dropdown-container">
-        <label for="driver_select">Select Driver:</label>
-        <select id="driver_select" name="driver_select">
-            <option value="">--Select a Driver--</option>
+        <label for="season_select">Select Season:</label>
+        <select id="season_select" name="season_select">
+            <option value="">--Select a Season--</option>
             <!-- Options will be populated dynamically -->
         </select>
     </div>
@@ -18,10 +18,8 @@
         <label for="report_type">Select Report Type:</label>
         <select id="report_type" name="report_type">
             <option value="">--Select Report Type--</option>
-            <option value="race_statistics">Race Statistics of Driver over a particular season</option>
-            <option value="particular_statistics">Particular Statistics</option>
-            <option value="average_finishing_position">Average Finishing Position over each season</option>
-            <option value="teammate_comparison">Number of times a driver beats their teammate in races</option>
+            <option value="race_statistics">Race Statistics of all drivers in a particular season</option>
+            <option value="championship_position">Final Championship Position of all drivers sorted by total points</option>
         </select>
     </div>
     <div class="driver-details">
@@ -40,6 +38,6 @@
     <div class="back-button-container">
         <a href="../../Drivers.html" class="back-button" onclick="goBack()">Back</a>
     </div>
-    <script src="DriverSpecificReportScript.js"></script>
+    <script src="DriversChampionshipReportScript.js"></script>
 </body>
 </html>

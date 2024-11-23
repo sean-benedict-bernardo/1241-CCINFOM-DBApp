@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver: Finalize Contract</title>
+    <link rel="stylesheet" href="DriverFinalizesContract.css">
+</head>
+<body>
+    <div class="title">Finalize Driver Contract</div>
+    <div class="dropdown-container">
+        <label for="driver_select">Select Driver:</label>
+        <select id="driver_select" name="driver_select">
+            <option value="">--Select a Driver--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+    </div>
+    <div class="dropdown-container">
+        <label for="constructor_select">Select Constructor:</label>
+        <select id="constructor_select" name="constructor_select">
+            <option value="">--Select a Constructor--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+    </div>
+    <form id="finalize_contract_form" action="/finalize_contract" method="post">
+        <div>
+            <label for="current_salary">Current Salary:</label>
+            <input type="number" id="current_salary" name="current_salary" step="0.01" required>
+        </div>
+        <div>
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+        </div>
+        <div>
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+        </div>
+        <div>
+            <label for="bonus">Bonus:</label>
+            <input type="number" id="bonus" name="bonus" step="0.01" required>
+        </div>
+        <button type="submit">Finalize Contract</button>
+    </form>
+    <div class="back-button-container">
+        <a href="../../Drivers.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+    <script src="DriverFinalizesContractScript.js"></script>
+</body>
+</html>

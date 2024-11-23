@@ -49,15 +49,15 @@ html, body {
     background-color: #45a049;
 }
 
-.button-wide {
-    width: 60vw;
+.participate-button {
+    width: 61vw; /* Adjust the width as needed */
 }
 
-.winparticipate-color {
+.participate-color {
     background-color: #399375;
 }
 
-.winparticipate-color:hover {
+.participate-color:hover {
     background-color: #2D745C;
 }
 

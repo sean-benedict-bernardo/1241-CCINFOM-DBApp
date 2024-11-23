@@ -53,11 +53,11 @@ html, body {
     width: 60vw; /* Adjust the width as needed */
 }
 
-.winparticipate-color {
+.participate-color {
     background-color: #399375;
 }
 
-.winparticipate-color:hover {
+.participate-color:hover {
     background-color: #2D745C;
 }
 

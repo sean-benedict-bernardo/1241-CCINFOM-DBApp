@@ -1,4 +1,4 @@
-/* AddDriverStyle.css */
+/* DriversChampionshipReportStyle.css */
 
 html, body {
     background-image: url('../../../../Resources/DriversBG.png');
@@ -9,7 +9,7 @@ html, body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     position: relative;
 }
@@ -24,45 +24,49 @@ html, body {
     color: white;
 }
 
-form {
+.dropdown-container {
+    margin-top: 60px; /* Adjust this value to control the spacing below the title */
+    text-align: center;
+}
+
+.dropdown-container label {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.dropdown-container select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.driver-details {
     background: rgba(255, 255, 255, 0.8);
     padding: 2vw;
     border-radius: 1vw;
-    max-width: 25vw;
+    max-width: 80vw;
     width: 100%;
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adjust this value to control the spacing below the dropdown */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    max-height: 50vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
-form label {
+.driver-details table {
     width: 100%;
-    margin-bottom: 1vh;
-    font-weight: bold;
+    border-collapse: collapse;
 }
 
-form input {
-    width: 100%;
-    padding: 1vh;
-    margin-bottom: 2vh;
+.driver-details th, .driver-details td {
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 0.5vw;
-}
-
-form button {
-    width: 100%;
-    padding: 1.5vh;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 0.5vw;
-    cursor: pointer;
-    font-size: 2vw;
-}
-
-form button:hover {
-    background-color: #45a049;
+    text-align: left;
 }
 
 .back-button-container {
@@ -92,12 +96,12 @@ form button:hover {
         font-size: 6vw;
     }
 
-    form {
+    .driver-details {
         padding: 4vw;
         max-width: 90vw;
     }
 
-    form button, .back-button {
+    .back-button {
         font-size: 3vw;
     }
 }
