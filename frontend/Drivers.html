@@ -2,18 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--Change html background to driversbg.png-->
-    <style>
-        body {
-            background-image: url('Resources/DriversBG.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers</title>
+    <link rel="stylesheet" href="css/DriversStyle.css">
 </head>
 <body>
-
+    <div class="drivers-title">Drivers</div>
+    <div class="button-container">
+        <div class="button-row">
+            <a href="AddDriver.html" class="button">Add Driver</a>
+            <a href="ViewDriver.html" class="button">View Driver</a>
+        </div>
+        <div class="button-row">
+            <a href="UpdateDriver.html" class="button">Update Driver</a>
+            <a href="DeleteDriver.html" class="button">Delete Driver</a>
+        </div>
+        <div class="button-row">
+            <a href="DriverParticipate.html" class="button teal-color">Driver Participate</a>
+            <a href="DriverWin.html" class="button teal-color">Driver Win</a>
+        </div>
+        <div class="button-row">
+            <a href="SpecificReport.html" class="button report-color">Specific Report</a>
+            <a href="SummativeReport.html" class="button report-color">Summative Report</a>
+        </div>
+    </div>
+    <div class="back-button-container">
+        <a href="HomePage.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
 </body>
 </html>
