@@ -6,6 +6,24 @@
     <link rel="stylesheet" href="ConstructorParticipateStyle.css">
 </head>
 <body>
+    <div class="title">Constructor Participation</div>
+    <form action="/add_constructor_participation" method="post">
+        <label for="race_select">Select Race:</label>
+        <select id="race_select" name="race_select" required>
+            <option value="">--Select a Race--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
 
+        <label for="constructor_select">Select Constructor:</label>
+        <select id="constructor_select" name="constructor_select" required>
+            <option value="">--Select a Constructor--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <button type="submit">Submit Participation</button>
+    </form>
+    <div class="back-button-container">
+        <a href="../../Constructors.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
 </body>
 </html>
