@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver: Participate</title>
+    <link rel="stylesheet" href="DriverParticipateStyle.css">
+</head>
+<body>
+    <div class="title">Driver Participation</div>
+    <form action="/add_participation" method="post">
+        <label for="race_select">Select Race:</label>
+        <select id="race_select" name="race_select" required>
+            <option value="">--Select a Race--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <label for="driver_select">Select Driver:</label>
+        <select id="driver_select" name="driver_select" required>
+            <option value="">--Select a Driver--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <label for="position">Position:</label>
+        <select id="position" name="position" required>
+            <option value="">--Select Position--</option>
+            <!-- Populate positions dynamically -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <!-- Add more options up to 25 -->
+            <option value="DNF">DNF</option>
+        </select>
+
+        <label for="penalty_points">Penalty Points:</label>
+        <input type="number" id="penalty_points" name="penalty_points" min="0" required>
+
+        <label for="remarks">Remarks:</label>
+        <input type="text" id="remarks" name="remarks" maxlength="255">
+
+        <button type="submit">Submit Participation</button>
+    </form>
+    <div class="back-button-container">
+        <a href="../../Drivers.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver: View</title>
+    <link rel="stylesheet" href="ViewDriverStyle.css">
+</head>
+<body>
+    <div class="title">View Driver</div>
+    <div class="dropdown-container">
+        <label for="driver_select">Select Driver:</label>
+        <select id="driver_select" name="driver_select">
+            <option value="">--Select a Driver--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+    </div>
+    <div class="driver-details">
+        <table id="driver_table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Birth Date</th>
+                    <th>Country Code</th>
+                    <th>Driver Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Driver details will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div class="back-button-container">
+        <a href="../../Drivers.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+    <script src="ViewDriverScript.js"></script>
+</body>
+</html>

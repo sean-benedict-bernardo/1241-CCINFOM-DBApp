@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Driver</title>
+    <link rel="stylesheet" href="AddDriverStyle.css">
+</head>
+<body>
+    <div class="title">New Driver</div>
+    <form action="/add_driver" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" maxlength="45" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" maxlength="45" required>
+
+        <label for="birth_date">Birth Date:</label>
+        <input type="date" id="birth_date" name="birth_date" required>
+
+        <label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" name="country_code" maxlength="3" required>
+
+        <label for="driver_code">Driver Code:</label>
+        <input type="text" id="driver_code" name="driver_code" maxlength="3" required>
+
+        <button type="submit">Add Driver</button>
+    </form>
+    <div class="back-button-container">
+        <a href="../../Drivers.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+</body>
+</html>
