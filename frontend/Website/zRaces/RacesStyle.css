@@ -47,6 +47,10 @@ html, body {
     background-color: #45a049;
 }
 
+.update-race-button {
+    width: 43vw; /* Adjust the width as needed */
+}
+
 .back-button-container {
     position: absolute;
     bottom: 4vh;

@@ -22,10 +22,15 @@ html, body {
     color: white;
 }
 
-.dropdown-container {
+.dropdowns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
     text-align: center;
-    display: inline-block;
+}
+
+.dropdown-container {
     margin-right: 20px;
 }
 
@@ -33,6 +38,7 @@ html, body {
     font-size: 18px;
     font-weight: bold;
     color: white;
+    margin-right: 10px;
 }
 
 .dropdown-container select {
@@ -40,7 +46,6 @@ html, body {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-top: 10px;
 }
 
 form {

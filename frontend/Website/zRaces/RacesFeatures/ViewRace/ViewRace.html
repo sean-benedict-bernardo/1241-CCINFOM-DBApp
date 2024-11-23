@@ -6,6 +6,34 @@
     <link rel="stylesheet" href="ViewRaceStyle.css">
 </head>
 <body>
-
+    <div class="title">View Race</div>
+    <div class="dropdown-container">
+        <label for="race_select">Select Race:</label>
+        <select id="race_select" name="race_select">
+            <option value="">--Select a Race--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+    </div>
+    <div class="race-details">
+        <table id="race_table">
+            <thead>
+                <tr>
+                    <th>Race Name</th>
+                    <th>Track Location</th>
+                    <th>Race Season</th>
+                    <th>Number of Laps</th>
+                    <th>Race Status</th>
+                    <th>Prize Money</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Race details will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div class="back-button-container">
+        <a href="../../Races.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+    <script src="ViewRaceScript.js"></script>
 </body>
 </html>

@@ -6,4 +6,99 @@ html, body {
     overflow: hidden;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.dropdown-container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.dropdown-container label {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.dropdown-container select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.crew-details {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2vw;
+    border-radius: 1vw;
+    max-width: 80vw;
+    width: 100%;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.crew-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crew-details th, .crew-details td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.back-button-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 1.5vh 3vw;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 6vw;
+    }
+
+    .crew-details {
+        padding: 4vw;
+        max-width: 90vw;
+    }
+
+    .back-button {
+        font-size: 3vw;
+    }
 }

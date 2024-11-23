@@ -7,19 +7,21 @@
 </head>
 <body>
     <div class="title">Finalize Driver Contract</div>
-    <div class="dropdown-container">
-        <label for="driver_select">Select Driver:</label>
-        <select id="driver_select" name="driver_select">
-            <option value="">--Select a Driver--</option>
-            <!-- Options will be populated dynamically -->
-        </select>
-    </div>
-    <div class="dropdown-container">
-        <label for="constructor_select">Select Constructor:</label>
-        <select id="constructor_select" name="constructor_select">
-            <option value="">--Select a Constructor--</option>
-            <!-- Options will be populated dynamically -->
-        </select>
+    <div class="dropdowns-container">
+        <div class="dropdown-container">
+            <label for="driver_select">Select Driver:</label>
+            <select id="driver_select" name="driver_select">
+                <option value="">--Select a Driver--</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="constructor_select">Select Constructor:</label>
+            <select id="constructor_select" name="constructor_select">
+                <option value="">--Select a Constructor--</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
     </div>
     <form id="finalize_contract_form" action="/finalize_contract" method="post">
         <div>

@@ -2,10 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crew: Add</title>
+    <title>Add Crew</title>
     <link rel="stylesheet" href="AddCrewStyle.css">
 </head>
 <body>
+    <div class="title">New Crew Member</div>
+    <form action="/add_crew" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" maxlength="45" required>
 
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" maxlength="45" required>
+
+        <label for="crew_role">Crew Role:</label>
+        <select id="crew_role" name="crew_role" required>
+            <option value="">--Select a Role--</option>
+            <option value="Team Principal">Team Principal</option>
+            <option value="Race Engineer">Race Engineer</option>
+            <option value="Mechanic">Mechanic</option>
+            <option value="Pit Crew">Pit Crew</option>
+            <option value="Strategist">Strategist</option>
+            <option value="Driver">Driver</option>
+        </select>
+
+        <label for="constructor_select">Select Constructor:</label>
+        <select id="constructor_select" name="constructor_select" required>
+            <option value="">--Select a Constructor--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <button type="submit">Add Crew Member</button>
+    </form>
+    <div class="back-button-container">
+        <a href="../../RaceCrews.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+    <script src="AddCrewScript.js"></script>
 </body>
 </html>

@@ -7,22 +7,30 @@
 </head>
 <body>
     <div class="title">Driver Specific Report</div>
-    <div class="dropdown-container">
-        <label for="driver_select">Select Driver:</label>
-        <select id="driver_select" name="driver_select">
-            <option value="">--Select a Driver--</option>
-            <!-- Options will be populated dynamically -->
-        </select>
-    </div>
-    <div class="dropdown-container">
-        <label for="report_type">Select Report Type:</label>
-        <select id="report_type" name="report_type">
-            <option value="">--Select Report Type--</option>
-            <option value="race_statistics">Race Statistics of Driver over a particular season</option>
-            <option value="particular_statistics">Particular Statistics</option>
-            <option value="average_finishing_position">Average Finishing Position over each season</option>
-            <option value="teammate_comparison">Number of times a driver beats their teammate in races</option>
-        </select>
+    <div class="dropdowns-container">
+        <div class="dropdown-container">
+            <label for="season_select">Select Season:</label>
+            <select id="season_select" name="season_select">
+                <option value="">--Select a Season--</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="driver_select">Select Driver:</label>
+            <select id="driver_select" name="driver_select">
+                <option value="">--Select a Driver--</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="report_type">Select Report Type:</label>
+            <select id="report_type" name="report_type">
+                <option value="">--Select Report Type--</option>
+                <option value="race_statistics">Race Statistics of Driver over the Season</option>
+                <option value="particular_statistics">Particular Statistics</option>
+                <option value="average_finishing_position">Average Finishing Position over the Season</option>
+            </select>
+        </div>
     </div>
     <div class="driver-details">
         <table id="driver_table">

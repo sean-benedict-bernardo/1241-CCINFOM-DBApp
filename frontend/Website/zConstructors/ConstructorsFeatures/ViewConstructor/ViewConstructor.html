@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Constructor: View</title>
-    <link rel="stylesheet" href="ViewConstructorsStyle.css">
+    <link rel="stylesheet" href="ViewConstructorStyle.css">
 </head>
 <body>
-
+    <div class="title">View Constructor</div>
+    <div class="dropdown-container">
+        <label for="constructor_select">Select Constructor:</label>
+        <select id="constructor_select" name="constructor_select">
+            <option value="">--Select a Constructor--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+    </div>
+    <div class="constructor-details">
+        <table id="constructor_table">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>Year Founded</th>
+                    <th>Country Code</th>
+                    <th>Engine Manufacturer</th>
+                    <th>Current Budget</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Constructor details will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div class="back-button-container">
+        <a href="../../Constructors.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+    <script src="ViewConstructorScript.js"></script>
 </body>
 </html>

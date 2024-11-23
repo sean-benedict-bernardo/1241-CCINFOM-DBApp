@@ -2,10 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crew: Update</title>
+    <title>Update Crew</title>
     <link rel="stylesheet" href="UpdateCrewStyle.css">
 </head>
 <body>
-
+    <div class="title">Update Crew Member</div>
+    <div class="dropdown-row">
+        <div class="dropdown-container">
+            <label for="crew_select">Select Crew Member:</label>
+            <select id="crew_select" name="crew_select">
+                <option value="">--Select a Crew Member--</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="attribute_select">Select Attribute to Edit:</label>
+            <select id="attribute_select" name="attribute_select" onchange="updateForm()">
+                <option value="">--Select an Attribute--</option>
+                <option value="first_name">First Name</option>
+                <option value="last_name">Last Name</option>
+                <option value="crew_role">Crew Role</option>
+                <option value="constructor">Constructor</option>
+            </select>
+        </div>
+    </div>
+    <form id="update_crew_form" action="/update_crew" method="post">
+        <div id="current_value_container">
+            <label for="current_value">Current Value:</label>
+            <input type="text" id="current_value" name="current_value" readonly>
+        </div>
+        <div id="new_value_container">
+            <label for="new_value">New Value:</label>
+            <input type="text" id="new_value" name="new_value" required>
+        </div>
+        <button type="submit">Update Crew Member</button>
+    </form>
+    <div class="back-button-container">
+        <a href="../../RaceCrews.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+    <script src="UpdateCrewScript.js"></script>
 </body>
 </html>

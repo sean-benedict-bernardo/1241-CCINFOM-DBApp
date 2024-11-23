@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Constructor: Specific Report</title>
-  <link rel="stylesheet" href="ConstructorSpecificReportStyle.css">
+    <link rel="stylesheet" href="ConstructorSpecificReportStyle.css">
 </head>
 <body>
-
+    <div class="title">Constructor Specific Report</div>
+    <div class="dropdowns-container">
+        <div class="dropdown-container">
+            <label for="season_select">Select Season:</label>
+            <select id="season_select" name="season_select">
+                <option value="">--Select a Season--</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="constructor_select">Select Constructor:</label>
+            <select id="constructor_select" name="constructor_select">
+                <option value="">--Select a Constructor--</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="report_type">Select Report Type:</label>
+            <select id="report_type" name="report_type">
+                <option value="">--Select Report Type--</option>
+                <option value="race_statistics">Race Statistics of Team over the Season</option>
+                <option value="particular_statistics">Particular Statistics</option>
+                <option value="average_finishing_position">Average Finishing Position over the Season</option>
+            </select>
+        </div>
+    </div>
+    <div class="constructor-details">
+        <table id="constructor_table">
+            <thead>
+                <tr>
+                    <th>Detail</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Constructor details will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div class="back-button-container">
+        <a href="../../Constructors.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+    <script src="ConstructorSpecificReportScript.js"></script>
 </body>
 </html>

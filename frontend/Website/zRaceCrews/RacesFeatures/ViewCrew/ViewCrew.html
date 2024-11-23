@@ -6,6 +6,32 @@
     <link rel="stylesheet" href="ViewCrewStyle.css">
 </head>
 <body>
-
+    <div class="title">View Crew</div>
+    <div class="dropdown-container">
+        <label for="crew_select">Select Crew Member:</label>
+        <select id="crew_select" name="crew_select">
+            <option value="">--Select a Crew Member--</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+    </div>
+    <div class="crew-details">
+        <table id="crew_table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Crew Role</th>
+                    <th>Constructor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Crew details will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div class="back-button-container">
+        <a href="../../RaceCrews.html" class="back-button" onclick="goBack()">Back</a>
+    </div>
+    <script src="ViewCrewScript.js"></script>
 </body>
 </html>
