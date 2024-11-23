@@ -3,62 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Race Management System</title>
+    <link rel="stylesheet" href="css/HomePageStyle.css">
 </head>
 
-<style>
-    html, body{
-        margin: 0;
-        overflow: hidden;
-    }
-    video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .content {
-        position: relative;
-        text-align: center;
-        padding-top: 20%;
-    }
-
-    .content a.button {
-    text-decoration: none;
-    color: white;
-    font-size: 50px;
-    padding: 30px;
-    background-color: black;
-    border-radius: 10px;
-    margin: 10px;
-    width: 300px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-</style>
-
 <body>
-
-<!--Create a title: race management system-->
-<h1 style="text-align: center; color: white; font-size: 50px; padding-top: 10px">
-    Race
-</h1>
-
-<!-- Create the background of the webpage being a looped vid 1920 x 1080 -->
-<video autoplay muted loop style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
-    <source src="Resources/HomePageBG.mp4" type="video/mp4">
-</video>
-    <!--Create fancy buttons for 4hrefs linking to different pages: driver, constructors, race crews, races-->
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); justify-items: center; align-items: center; padding-top: 10%; gap: 10px; max-width: 420px; margin: auto;">
-    <a href="Drivers.html" style="text-decoration: none; color: white; font-size: 30px; padding: 10px; background-color: black; border-radius: 10px; margin: 10px; width: 200px; text-align: center;">Drivers</a>
-    <a href="Constructors.html" style="text-decoration: none; color: white; font-size: 30px; padding: 10px; background-color: black; border-radius: 10px; margin: 10px; width: 200px; text-align: center;">Constructors</a>
-    <a href="RaceCrews.html" style="text-decoration: none; color: white; font-size: 30px; padding: 10px; background-color: black; border-radius: 10px; margin: 10px; width: 200px; text-align: center;">Race Crews</a>
-    <a href="Races.html" style="text-decoration: none; color: white; font-size: 30px; padding: 10px; background-color: black; border-radius: 10px; margin: 10px; width: 200px; text-align: center;">Races</a>
-</div>
+    <h1>Homepage</h1>
+    <video autoplay muted loop>
+        <source src="Resources/HomePageBG.mp4" type="video/mp4">
+    </video>
+    <div class="grid-container">
+        <a href="Drivers.html">Drivers</a>
+        <a href="Constructors.html">Constructors</a>
+        <a href="RaceCrews.html">Race Crews</a>
+        <a href="Races.html">Races</a>
     </div>
 </body>
 </html>
