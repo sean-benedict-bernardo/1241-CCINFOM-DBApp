@@ -2,20 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Race Crews</title>
-    <style>
-        html, body {
-            background-image: url('RaceCrewBG.png');
-            background-size: cover;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-            margin: 0;
-        }
-    </style>
+    <title>Manage Race Crews</title>
+    <link rel="stylesheet" href="../frontend/css/RaceCrewsStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <!--Make a title: race crews and then below it, similar to homepage, also have a 2x2 button composed of: Add Crew, View Crew, Update Crew, and Delete Crew-->
+    <h1 class="race-crews-title">Race Crews</h1>
+
+    <!--Similar to buttons in HomePage.html, create 4 buttons: Add Crew, View Crew, Update Crew, and Delete Crew-->
+    <div class="button-container">
+        <!--First row of buttons-->
+        <div class="button-row">
+            <a href="AddCrew.html" class="button">Add Crew</a>
+            <a href="ViewCrew.html" class="button">View Crew</a>
+        </div>
+
+        <!--Second row of buttons-->
+        <div class="button-row">
+            <a href="UpdateCrew.html" class="button">Update Crew</a>
+            <a href="DeleteCrew.html" class="button">Delete Crew</a>
+        </div>
+    </div>
+
+    <!--Back button-->
+    <div class="back-button-container">
+        <a href="HomePage.html" class="button back-button">Back</a>
+    </div>
+
+    </div>
 
 </body>
 </html>
