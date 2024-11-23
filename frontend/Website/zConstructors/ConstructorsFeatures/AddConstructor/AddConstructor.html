@@ -6,32 +6,31 @@
     <link rel="stylesheet" href="AddConstructorStyle.css">
 </head>
 <body>
-    <div class="title">New Constructor</div>
-    <form action="/add_constructor" method="post">
-        <label for="team_name">Team Name:</label>
-        <input type="text" id="team_name" name="team_name" maxlength="45" required>
+<div class="title">New Constructor</div>
+<form id="add-constructor-form">
+    <label for="team_name">Team Name:</label>
+    <input type="text" id="team_name" name="name" maxlength="45" required>
 
-        <label for="year_founded">Year Founded:</label>
-        <input type="number" id="year_founded" name="year_founded" required>
+    <label for="year_founded">Year Founded:</label>
+    <input type="number" id="year_founded" name="year_founded" required>
 
-        <label for="country_code">Country Code:</label>
-        <input type="text" id="country_code" name="country_code" maxlength="3" required>
+    <label for="country_code">Country Code:</label>
+    <select id="country_code" name="country_id" required>
+        <option value="">Select a country</option>
+    </select>
 
-        <label for="engine_manufacturer">Engine Manufacturer:</label>
-        <select id="engine_manufacturer" name="engine_manufacturer" required>
-            <option value="Honda">Honda</option>
-            <option value="Mercedes">Mercedes</option>
-            <option value="Ferrari">Ferrari</option>
-            <option value="Renault">Renault</option>
-        </select>
+    <label for="engine_manufacturer">Engine Manufacturer:</label>
+    <input type="text" id="engine_manufacturer" name="engine_manufacturer" maxlength="45" required>
 
-        <label for="current_budget">Current Budget:</label>
-        <input type="number" id="current_budget" name="current_budget" step="0.01" required>
+    <label for="constructor_budget">Constructor Budget:</label>
+    <input type="number" id="constructor_budget" name="constructor_budget" step="0.01" required>
 
-        <button type="submit">Add Constructor</button>
-    </form>
-    <div class="back-button-container">
-        <a href="../../Constructors.html" class="back-button" onclick="goBack()">Back</a>
-    </div>
+    <button type="submit">Add Constructor</button>
+</form>
+<div class="back-button-container">
+    <a href="../../Constructors.html" class="back-button">Back</a>
+</div>
+
+<script src="AddConstructorScript.js"></script>
 </body>
 </html>

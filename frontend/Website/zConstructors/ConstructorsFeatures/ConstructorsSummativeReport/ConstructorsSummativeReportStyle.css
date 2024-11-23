@@ -26,7 +26,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -60,7 +60,7 @@ html, body {
     justify-content: center;
     align-items: center;
     max-height: 50vh;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .constructor-details table {

@@ -17,7 +17,7 @@
         </div>
         <div class="dropdown-container">
             <label for="attribute_select">Select Attribute to Edit:</label>
-            <select id="attribute_select" name="attribute_select" onchange="updateForm()">
+            <select id="attribute_select" name="attribute_select">
                 <option value="">--Select an Attribute--</option>
                 <option value="race_name">Race Name</option>
                 <option value="track_location">Track Location</option>
@@ -28,7 +28,7 @@
             </select>
         </div>
     </div>
-    <form id="update_race_form" action="/update_race" method="post">
+    <form id="update_race_form">
         <div id="current_value_container">
             <label for="current_value">Current Value:</label>
             <input type="text" id="current_value" name="current_value" readonly>

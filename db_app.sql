@@ -16,7 +16,7 @@ CREATE TABLE race (
 );
 
 CREATE TABLE race_stats (
-    race_id INT PRIMARY KEY,
+    race_id INT,
     driver_code VARCHAR(3),
     position ENUM(
         'P1',
@@ -42,7 +42,7 @@ CREATE TABLE race_stats (
         'DNF'
     ),
     penalty INT,
-    remarks VARCHAR(255) DEFAULT "Clean Race"
+    remarks VARCHAR(255) DEFAULT 'Clean Race'
 );
 
 CREATE TABLE REF_points_awarded(
@@ -75,27 +75,27 @@ CREATE TABLE REF_points_awarded(
 INSERT INTO
     REF_points_awarded (position, points)
 VALUES
-    ("P1", 25),
-    ("P2", 18),
-    ("P3", 15),
-    ("P4", 12),
-    ("P5", 10),
-    ("P6", 8),
-    ("P7", 6),
-    ("P8", 4),
-    ("P9", 2),
-    ("P10", 1),
-    ("P11", 0),
-    ("P12", 0),
-    ("P13", 0),
-    ("P14", 0),
-    ("P15", 0),
-    ("P16", 0),
-    ("P17", 0),
-    ("P18", 0),
-    ("P19", 0),
-    ("P20", 0),
-    ("DNF", 0);
+    ('P1', 25),
+    ('P2', 18),
+    ('P3', 15),
+    ('P4', 12),
+    ('P5', 10),
+    ('P6', 8),
+    ('P7', 6),
+    ('P8', 4),
+    ('P9', 2),
+    ('P10', 1),
+    ('P11', 0),
+    ('P12', 0),
+    ('P13', 0),
+    ('P14', 0),
+    ('P15', 0),
+    ('P16', 0),
+    ('P17', 0),
+    ('P18', 0),
+    ('P19', 0),
+    ('P20', 0),
+    ('DNF', 0);
 
 CREATE TABLE driver_info (
     driver_code VARCHAR(3) PRIMARY KEY,
@@ -112,8 +112,8 @@ CREATE TABLE race_crew (
 );
 
 CREATE TABLE contract (
-    constructor_id INT PRIMARY KEY, -- PK FK
-    crew_id INT, -- PK FK
+    constructor_id INT, -- FK
+    crew_id INT, -- FK
     contract_start DATE,
     contract_end DATE,
     salary DECIMAL,
@@ -124,14 +124,14 @@ CREATE TABLE REF_job (job_id INT, job_title VARCHAR(45));
 
 INSERT INTO REF_job (job_id, job_title)
 VALUES
-    (1, "Driver"),
-    (2, "Mechanic"),
-    (3, "Engineer"),
-    (4, "Pit Crew"),
-    (5, "Team Principal");
+    (1, 'Driver'),
+    (2, 'Mechanic'),
+    (3, 'Engineer'),
+    (4, 'Pit Crew'),
+    (5, 'Team Principal');
 
 CREATE TABLE constructor (
-    constructor_id INT,
+    constructor_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(45),
     year_founded INT,
     country_id VARCHAR(3),
@@ -148,26 +148,26 @@ CREATE TABLE REF_countries (
 INSERT INTO
     REF_countries (country_id, name)
 VALUES
-    ("AUS", "Australia"),
-    ("AUT", "Austria"),
-    ("BEL", "Belgium"),
-    ("BRA", "Brazil"),
-    ("CAN", "Canada"),
-    ("CHN", "China"),
-    ("FRA", "France"),
-    ("GER", "Germany"),
-    ("HUN", "Hungary"),
-    ("ITA", "Italy"),
-    ("JPN", "Japan"),
-    ("MEX", "Mexico"),
-    ("MON", "Monaco"),
-    ("NED", "Netherlands"),
-    ("RUS", "Russia"),
-    ("SAU", "Saudi Arabia"),
-    ("SGP", "Singapore"),
-    ("ESP", "Spain"),
-    ("SWE", "Sweden"),
-    ("TUR", "Turkey"),
-    ("UAE", "United Arab Emirates"),
-    ("GBR", "United Kingdom"),
-    ("USA", "United States of America");
+    ('AUS', 'Australia'),
+    ('AUT', 'Austria'),
+    ('BEL', 'Belgium'),
+    ('BRA', 'Brazil'),
+    ('CAN', 'Canada'),
+    ('CHN', 'China'),
+    ('FRA', 'France'),
+    ('GER', 'Germany'),
+    ('HUN', 'Hungary'),
+    ('ITA', 'Italy'),
+    ('JPN', 'Japan'),
+    ('MEX', 'Mexico'),
+    ('MON', 'Monaco'),
+    ('NLD', 'Netherlands'),
+    ('RUS', 'Russia'),
+    ('SAU', 'Saudi Arabia'),
+    ('SGP', 'Singapore'),
+    ('ESP', 'Spain'),
+    ('SWE', 'Sweden'),
+    ('TUR', 'Turkey'),
+    ('UAE', 'United Arab Emirates'),
+    ('GBR', 'United Kingdom'),
+    ('USA', 'United States of America');

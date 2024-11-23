@@ -2,30 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Constructor: Update</title>
+    <title>Update Constructor</title>
     <link rel="stylesheet" href="UpdateConstructorStyle.css">
 </head>
 <body>
     <div class="title">Update Constructor</div>
-    <div class="dropdown-container">
-        <label for="constructor_select">Select Constructor:</label>
-        <select id="constructor_select" name="constructor_select">
-            <option value="">--Select a Constructor--</option>
-            <!-- Options will be populated dynamically -->
-        </select>
+    <div class="dropdown-row">
+        <div class="dropdown-container">
+            <label for="constructor_select">Select Constructor:</label>
+            <select id="constructor_select" name="constructor_select">
+                <option value="">--Select a Constructor--</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="attribute_select">Select Attribute to Edit:</label>
+            <select id="attribute_select" name="attribute_select">
+                <option value="">--Select an Attribute--</option>
+                <option value="name">Team Name</option>
+                <option value="year_founded">Year Founded</option>
+                <option value="country_id">Country Code</option>
+                <option value="engine_manufacturer">Engine Manufacturer</option>
+                <option value="constructor_budget">Constructor Budget</option>
+            </select>
+        </div>
     </div>
-    <div class="dropdown-container">
-        <label for="attribute_select">Select Attribute to Edit:</label>
-        <select id="attribute_select" name="attribute_select" onchange="updateForm()">
-            <option value="">--Select an Attribute--</option>
-            <option value="team_name">Team Name</option>
-            <option value="year_founded">Year Founded</option>
-            <option value="country_code">Country Code</option>
-            <option value="engine_manufacturer">Engine Manufacturer</option>
-            <option value="current_budget">Current Budget</option>
-        </select>
-    </div>
-    <form id="update_constructor_form" action="/update_constructor" method="post">
+    <form id="update_constructor_form">
         <div id="current_value_container">
             <label for="current_value">Current Value:</label>
             <input type="text" id="current_value" name="current_value" readonly>
@@ -33,11 +35,14 @@
         <div id="new_value_container">
             <label for="new_value">New Value:</label>
             <input type="text" id="new_value" name="new_value" required>
+            <select id="new_value_select" name="new_value" style="display: none;">
+                <option value="">Select a country</option>
+            </select>
         </div>
         <button type="submit">Update Constructor</button>
     </form>
     <div class="back-button-container">
-        <a href="../../Constructors.html" class="back-button" onclick="goBack()">Back</a>
+        <a href="../../Constructors.html" class="back-button">Back</a>
     </div>
     <script src="UpdateConstructorScript.js"></script>
 </body>

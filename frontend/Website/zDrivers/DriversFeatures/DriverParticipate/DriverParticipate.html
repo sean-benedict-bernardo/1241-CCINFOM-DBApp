@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="title">Driver Participation</div>
-    <form action="/add_participation" method="post">
+    <form id="driver_participate_form">
         <label for="race_select">Select Race:</label>
         <select id="race_select" name="race_select" required>
             <option value="">--Select a Race--</option>
@@ -24,27 +24,26 @@
         <select id="position" name="position" required>
             <option value="">--Select Position--</option>
             <!-- Populate positions dynamically -->
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <!-- Add more options up to 25 -->
+            <option value="P1">P1</option>
+            <option value="P2">P2</option>
+            <option value="P3">P3</option>
+            <option value="P4">P4</option>
+            <option value="P5">P5</option>
+            <option value="P6">P6</option>
+            <option value="P7">P7</option>
+            <option value="P8">P8</option>
+            <option value="P9">P9</option>
+            <option value="P10">P10</option>
+            <option value="P11">P11</option>
+            <option value="P12">P12</option>
+            <option value="P13">P13</option>
+            <option value="P14">P14</option>
+            <option value="P15">P15</option>
+            <option value="P16">P16</option>
+            <option value="P17">P17</option>
+            <option value="P18">P18</option>
+            <option value="P19">P19</option>
+            <option value="P20">P20</option>
             <option value="DNF">DNF</option>
         </select>
 
@@ -59,5 +58,6 @@
     <div class="back-button-container">
         <a href="../../Drivers.html" class="back-button" onclick="goBack()">Back</a>
     </div>
+    <script src="DriverParticipateScript.js"></script>
 </body>
 </html>

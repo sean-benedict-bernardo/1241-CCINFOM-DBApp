@@ -22,8 +22,13 @@ html, body {
     color: white;
 }
 
+.dropdown-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
 .dropdown-container {
-    margin-top: 60px;
     text-align: center;
     display: inline-block;
     margin-right: 20px;
@@ -40,14 +45,14 @@ html, body {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 form {
     background: rgba(255, 255, 255, 0.8);
     padding: 2vw;
     border-radius: 1vw;
-    max-width: 25vw;
+    max-width: 30vw;
     width: 100%;
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
     display: flex;
@@ -62,10 +67,10 @@ form label {
     font-weight: bold;
 }
 
-form input {
+form input, form select {
     width: 100%;
     padding: 1vh;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
     border: 1px solid #ccc;
     border-radius: 0.5vw;
 }

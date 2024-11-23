@@ -49,11 +49,10 @@ html, body {
     width: 100%;
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    display: flex;
     justify-content: center;
     align-items: center;
     max-height: 50vh;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .constructor-details table {

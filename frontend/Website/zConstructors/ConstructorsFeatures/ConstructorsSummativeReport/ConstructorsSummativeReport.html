@@ -2,25 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Constructors: Summative Report</title>
+    <title>Constructor: Summative Report</title>
     <link rel="stylesheet" href="ConstructorsSummativeReportStyle.css">
 </head>
 <body>
-    <div class="title">Constructors Summative Report</div>
+    <div class="title">Constructor Summative Report</div>
     <div class="dropdowns-container">
         <div class="dropdown-container">
             <label for="season_select">Select Season:</label>
             <select id="season_select" name="season_select">
-                <option value="">--Select a Season--</option>
                 <!-- Options will be populated dynamically -->
-            </select>
-        </div>
-        <div class="dropdown-container">
-            <label for="report_type">Select Report Type:</label>
-            <select id="report_type" name="report_type">
-                <option value="">--Select Report Type--</option>
-                <option value="race_statistics">Race Statistics of all teams in a particular season</option>
-                <option value="championship_position">Final Championship Position of all teams sorted by total points</option>
             </select>
         </div>
     </div>
@@ -28,8 +19,8 @@
         <table id="constructor_table">
             <thead>
                 <tr>
-                    <th>Detail</th>
-                    <th>Value</th>
+                    <th>Constructor Name</th>
+                    <th>Total Points</th>
                 </tr>
             </thead>
             <tbody>
